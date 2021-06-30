@@ -1,0 +1,7 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<ContentModels.Home>
+@using ContentModels = Umbraco.Web.PublishedModels;
+@{
+    Layout = null;
+}
+
+@Umbraco.RenderMacro("renderUmbracoForm", new { FormGuid = "dad4add4-b834-4df9-82d2-8e13021639b0", FormTheme = "bootstrap3-horizontal" })

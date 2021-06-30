@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<language alias="en" intName="English (UK)" localName="English (UK)" lcid="" culture="en-GB">
+  <area alias="error">
+    <key alias="addressBooks">There was an error retrieving the Address Books from Dotdigital.</key>
+    <key alias="apiKey">Please check your API key is configured correctly.</key>
+  </area>
+  <area alias="headings">
+    <key alias="selectAddressBook">Select an Address Book</key>
+    <key alias="formFieldOrStatic">Form field/static value</key>
+    <key alias="contactDataField">Contact data field</key>
+  </area>
+  <area alias="mapButton">
+    <key alias="defaultLabel">Add field mapping</key>
+    <key alias="secondaryLabel">Add static mapping</key>
+  </area>
+</language>

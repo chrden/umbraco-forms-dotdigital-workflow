@@ -1,0 +1,6 @@
+{
+    "IIS-Site-Name": "Umbraco Forms Dotdigital Workflow Demo",
+    "App-Pool-Name": "Umbraco Forms Dotdigital Workflow Demo",
+    "IIS-App-Pool-Dot-Net-Version": "v4.0",
+    "bindings": ["ufdd-demo.localtest.me"]
+}

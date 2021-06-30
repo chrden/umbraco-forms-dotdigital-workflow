@@ -1,0 +1,13 @@
+{
+  "id": "19654b3e-ff0a-4bf0-a9e8-23392d1d85d7",
+  "name": "",
+  "form": "dad4add4-b834-4df9-82d2-8e13021639b0",
+  "active": true,
+  "includeSensitiveData": "False",
+  "workflowTypeId": "68bdc512-f67c-480f-921c-3a7a1b35c512",
+  "executesOn": "Submitted",
+  "settings": {
+    "FieldMapping": "{\"addressBookId\":\"73903\",\"fieldMappings\":[{\"formFieldAlias\":\"name\",\"dataFieldId\":\"FULLNAME\",\"staticValue\":\"\",\"isStatic\":false,\"$$hashKey\":\"object:842\"},{\"formFieldAlias\":\"email\",\"dataFieldId\":\"email\",\"staticValue\":\"\",\"isStatic\":false,\"$$hashKey\":\"object:853\"},{\"formFieldAlias\":\"\",\"dataFieldId\":\"TESTCUSTOMDATAFIELD\",\"staticValue\":\"Test static value\",\"isStatic\":true,\"$$hashKey\":\"object:872\"}]}"
+  },
+  "sortOrder": 0
+}
