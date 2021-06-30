@@ -40,6 +40,7 @@
                 var result = JSON.parse($scope.setting.value);
 
                 $scope.model.addressBookId = result.addressBookId;
+
                 $scope.getDataFields();
 
                 if (result.fieldMappings) {
@@ -50,8 +51,6 @@
 
         $scope.getDataFields = function () {
             if ($scope.model.addressBookId) {
-                save();
-
                 fieldmappingResource.getDataFields($scope.model.addressBookId).then(function (response) {
                     $scope.model.dataFields = response;
                 });
@@ -78,7 +77,7 @@
             save();
         };
 
-        $scope.saveMapping = function () {
+        $scope.save = function () {
             save();
         };
 

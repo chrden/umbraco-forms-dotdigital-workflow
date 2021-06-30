@@ -6,7 +6,7 @@
                 <localize key="headings_selectAddressBook">Select an Address Book</localize>
             </div>
         </div>
-        <select ng-model="model.addressBookId" ng-options="addressBook.Id as addressBook.Name for addressBook in model.addressBooks" ng-change="getDataFields()">
+        <select ng-model="model.addressBookId" ng-options="addressBook.Id as addressBook.Name for addressBook in model.addressBooks" ng-change="save()">
             <option value="">Select an Address Book</option>
         </select>
     </div>
@@ -35,16 +35,16 @@
 
             <div class="umb-forms-mapping" ng-repeat="fieldMapping in model.fieldMappings">
                 <div class="umb-forms-mapping-field -no-margin-left" ng-if="!fieldMapping.isStatic">
-                    <select ng-model="fieldMapping.formFieldAlias" ng-options="formField.alias as formField.caption for formField in model.fields" ng-change="saveMapping()" class="-full-width">
+                    <select ng-model="fieldMapping.formFieldAlias" ng-options="formField.alias as formField.caption for formField in model.fields" ng-change="save()" class="-full-width">
                     </select>
                 </div>
 
                 <div class="umb-forms-mapping-field -no-margin-left" ng-if="fieldMapping.isStatic">
-                    <input class="-full-width-input" type="text" placeholder="Static value" ng-model="fieldMapping.staticValue" ng-keyup="saveMapping()" />
+                    <input class="-full-width-input" type="text" placeholder="Static value" ng-model="fieldMapping.staticValue" ng-keyup="save()" />
                 </div>
 
                 <div class="umb-forms-mapping-field">
-                    <select ng-model="fieldMapping.dataFieldId" ng-options="dataField.Id as dataField.Name for dataField in model.dataFields" ng-change="saveMapping()" class="-full-width">
+                    <select ng-model="fieldMapping.dataFieldId" ng-options="dataField.Id as dataField.Name for dataField in model.dataFields" ng-change="save()" class="-full-width">
                     </select>
                 </div>
 
